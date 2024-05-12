@@ -17,7 +17,9 @@ export const Navigation = () => {
               <h1 className="small-text navigation-text" style={{ color: location.pathname === '/faq' ? '#fefeff' : '#fefeff50' }}>FAQ</h1>
             </Link>
             <Link to="/stake" className="small-text navigation-text">
-              <h1 className="small-text navigation-text" style={{ color: location.pathname === '/stake' ? '#fefeff' : '#fefeff50' }}>Stake</h1>
+              <div className="button-stake" >
+                <h1 className="small-text navigation-text" style={{ color: location.pathname === '/stake' ? '#fefeff' : '#fefeff50' }}>Stake</h1>
+              </div>
             </Link>
           </div>
         </div>

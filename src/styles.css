@@ -11,7 +11,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fefeff;
+  background-color: #070E2B;
   overflow-x: hidden;
 }
 
@@ -203,9 +203,10 @@ html.lenis {
   padding: 0px 5%;
   align-items: center;
   bottom: 0;
-  background-color: #070E2B;
+  background-color: transparent;
   position: relative;
   z-index: auto;
+  z-index: 10;
 }
 
 .nav .right-content a {
@@ -218,13 +219,11 @@ html.lenis {
   align-items: center;
   position: relative;
   height: 100%;
-  z-index: 10;
 }
 
 .left-content img {
   width: 2.25vw;
   position: relative;
-  z-index: 20;
 }
 
 .right-content {
@@ -257,7 +256,7 @@ html.lenis {
   position: absolute;
   right: 130vh;
   margin-top: -45vh;
-  z-index: 0;
+  z-index: 2;
 }
 
 .background-element-two {
@@ -270,7 +269,7 @@ html.lenis {
   position: absolute;
   left: 200vh;
   margin-top: -0vh;
-  z-index: 0;
+  z-index: 2;
 }
 
 
@@ -288,7 +287,7 @@ html.lenis {
   margin-right: 5%;
   display: flex;
   flex-direction: row;
-  z-index: 1;
+  z-index: 5;
 }
 
 .one-content-left {
@@ -348,16 +347,29 @@ html.lenis {
   padding-top: 0.25vw;
   padding-bottom: 0.25vw;
   border-radius: 50px;
-  border: 2px #fefeff15 solid;
-  background-color: transparent;
+  border: none;
+  background: linear-gradient(30deg, var(--c1, #a8b7f2), var(--c2, #1931FE) 40%, var(--c1, #F02D25)) var(--x, 0)/ 200%;
   color: #fefeff;
   cursor: pointer;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
 }
 
-.button-buy-now:hover {
-  border: 2px #fefeff45 solid;
+.button-buy-now:hover { --x: 50%; }
+
+
+.button-stake {
+  width: fit-content;
+  height: auto;
+  border-radius: 50px;
+  padding: 0.1vw 1vw;
+  border: none;
+  background: linear-gradient(30deg, var(--c1, #a8b7f2), var(--c2, #1931FE) 40%, var(--c1, #F02D25)) var(--x, 0)/ 200%;
+  color: #fefeff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
+
+.button-stake:hover { --x: 50%; }
 
 .one-content-right {
   width: 50%;
@@ -1018,7 +1030,7 @@ ul {
 }
 
 .seven {
-  z-index: 20;
+  z-index: 1;
   background-color: #070E2B;
   width: 100%;
   height: auto;
@@ -1033,7 +1045,7 @@ ul {
   background-color: transparent;
   flex-direction: column;
   margin-left: 5%;
-  z-index: 10;
+  z-index: 5;
   position: relative;
 }
 
@@ -1420,7 +1432,7 @@ ul {
   align-items: center;
   position: relative;
   height: 100%;
-  z-index: 10;
+  z-index: 12;
 }
 
 .left-content img {
@@ -1486,7 +1498,7 @@ ul {
   margin-right: 5%;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 10;
   align-items: start;
   justify-content: start;
 }
@@ -1538,6 +1550,7 @@ ul {
   color: #fefeff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  z-index: 20;
 }
 
 .button-join-now:hover { --x: 50%; }
@@ -1548,16 +1561,15 @@ ul {
   padding-top: 0.1vw;
   padding-bottom: 0.1vw;
   border-radius: 50px;
-  border: 2px #fefeff15 solid;
-  background-color: transparent;
+  border: none;
+  background: linear-gradient(30deg, var(--c1, #a8b7f2), var(--c2, #1931FE) 40%, var(--c1, #F02D25)) var(--x, 0)/ 200%;
   color: #fefeff;
   cursor: pointer;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
+  z-index: 20;
 }
 
-.button-buy-now:hover {
-  border: 2px #fefeff45 solid;
-}
+.button-buy-now:hover { --x: 50%; }
 
 .one-content-right {
   width: 100%;
