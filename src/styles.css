@@ -797,11 +797,15 @@ html.lenis {
   align-items: center;
   margin-bottom: 10vh;
   justify-content: center;
+  text-align: center;
 }
 
-.five-text {
-  text-align: center;
-  word-wrap: break-word;
+.five-title {
+  margin-bottom: 0%;
+}
+
+.five-desc {
+  margin-top: 3vh;
 }
 
 /* SECTION SIX */
@@ -856,6 +860,12 @@ html.lenis {
 .coin-icon {
   position: relative;
   width: 50vw;
+  margin-bottom: 10vh;
+}
+
+.coin-icon-2 {
+  position: relative;
+  width: 100%;
   margin-bottom: 10vh;
 }
 
@@ -1977,12 +1987,30 @@ ul {
   margin-left: 5%;
   margin-right: 5%;
   align-items: center;
+  overflow-wrap: break-word; /* For modern browsers */
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .five-text {
-  width: 100%;
-  text-align: center;
 }
+
+/* .five-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
+  margin-bottom: 10vh;
+  justify-content: center;
+}
+
+.five-text {
+  text-align: center;
+  word-wrap: break-word;
+} */
 
 /* SECTION FOOTER */
 
@@ -2284,7 +2312,7 @@ transform: scale(1);
 
 .roadmap-container {
   width: 100%;
-  height: 25vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   background-color: #fefeff15;
@@ -2313,14 +2341,14 @@ ul {
 .roadmap-button {
   background-color: transparent;
   border: none;
-  font-size: 2vw;
+  font-size: 2rem;
   cursor: pointer;
   transition: 0.25s ease-in;
   color: #fefeff;
 }
 
 .roadmap-button:hover {
-  color: #fefeff50;
+  color: #fefeff;
 }
 
 }

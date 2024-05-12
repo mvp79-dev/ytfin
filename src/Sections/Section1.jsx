@@ -241,8 +241,7 @@ export const Section1 = () => {
               </div>
             </div>
             <div className="one-content-right" >
-              <CanvasContainer />
-              <div className="mobile-scroll" />
+              <img src="/coin2.png" className="coin-icon-2" />
             </div>
           </div>
           <div className="logos">
@@ -406,7 +405,8 @@ export const Section1 = () => {
 
         <section className="five" >
             <div className="five-content" >
-                <h1 className="reveal-type medium-headline five-text grey" >Experience the forefront of Fintech innovation with YTFIN. Our pioneering token model ingeniously funnels YouTube's ad revenue into our ecosystem, ensuring a consistent and sustainable stream of passive income for our esteemed investors.</h1>
+                <h1 className="medium-headline five-title white" >Expolore YTFIN</h1>
+                <h1 className=" small-description five-desc grey" >Experience the forefront of Fintech innovation with YTFIN. Our pioneering token model ingeniously funnels YouTube's ad revenue into our ecosystem, ensuring a consistent and sustainable stream of passive income for our esteemed investors.</h1>
             </div>
         </section>
 
