@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import CanvasContainer from "../CanvasContainer";
-import { Section6 } from "./Section6";
 import { Link, useNavigate } from 'react-router-dom';
 
 export const Section1 = () => {
@@ -8,7 +6,7 @@ export const Section1 = () => {
   const roadmapData = [
     {
       quarter: "Q1 2024",
-      title: "Groundbreaking Beginnings",
+      title: "Headline 1",
       milestones: [
         "Launch of BlackCard & BCCoin",
         "Initiation of BlackCardChain Development",
@@ -17,38 +15,38 @@ export const Section1 = () => {
     },
     {
       quarter: "Q2 2024",
-      title: "Exciting Developments",
+      title: "Headline 2",
       milestones: [
-        "Expansion of BlackCard services",
-        "Introduction of BlackCard Rewards program",
-        "Enhancement of AI systems"
+        "Launch of BlackCard & BCCoin",
+        "Initiation of BlackCardChain Development",
+        "AI Liquidity Management System"
       ]
     },
     {
       quarter: "Q3 2024",
-      title: "Scaling Operations",
+      title: "Headline 3",
       milestones: [
-        "Integration with major financial institutions",
-        "Global marketing campaign",
-        "Introduction of new BlackCard features"
+        "Launch of BlackCard & BCCoin",
+        "Initiation of BlackCardChain Development",
+        "AI Liquidity Management System"
       ]
     },
     {
       quarter: "Q4 2024",
-      title: "Celebrating Milestones",
+      title: "Headline 4",
       milestones: [
-        "Achievement of 1 million BlackCard users",
-        "Launch of BlackCard mobile app",
-        "Expansion into new markets"
+        "Launch of BlackCard & BCCoin",
+        "Initiation of BlackCardChain Development",
+        "AI Liquidity Management System"
       ]
     },
     {
       quarter: "Q5 2024",
-      title: "Looking Ahead",
+      title: "Headline 5",
       milestones: [
-        "Research and development for future products",
-        "Strategic partnerships",
-        "Continued growth and innovation"
+        "Launch of BlackCard & BCCoin",
+        "Initiation of BlackCardChain Development",
+        "AI Liquidity Management System"
       ]
     },
     // Add more roadmap data for the remaining containers
@@ -219,6 +217,11 @@ export const Section1 = () => {
       navigate('/stake'); // Navigate to SectionBUYNOW
     };
 
+    const handleClick = (linkUrl) => {
+      // Open the specified webpage link in a new tab when carousel-content is clicked
+      window.open(linkUrl, '_blank');
+    };
+
     return (
       <>
         <section className="one">
@@ -235,13 +238,15 @@ export const Section1 = () => {
                 <button className="button-join-now" >
                   <h1 className="small-description white" onClick={scrollToRoadmap} >Discover</h1>
                 </button>
-                <button className="button-buy-now" >
+                <button className="button-stake-now" >
                   <h1 className="small-description white" onClick={handleStakeNowClick} >Stake Now</h1>
                 </button>
               </div>
             </div>
             <div className="one-content-right" >
-              <img src="/coin2.png" className="coin-icon-2" />
+              <video controls className="one-video" >
+                <source src="/ytfinvideo.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           <div className="logos">
@@ -387,6 +392,7 @@ export const Section1 = () => {
                   <li className="small-description grey" key={idx}>{milestone}</li>
                 ))}
               </ul>
+              <h1 className="small-description learn-more grey" onClick={() => handleClick("/ytfinroadmap.pdf")} >Learn More</h1>
             </div>
           ))}
         </div>

@@ -341,7 +341,7 @@ html.lenis {
 
 .button-join-now:hover { --x: 50%; }
 
-.button-buy-now {
+.button-stake-now {
   width: 40%;
   height: auto;
   padding-top: 0.25vw;
@@ -354,7 +354,11 @@ html.lenis {
   transition: 0.5s ease-in-out;
 }
 
-.button-buy-now:hover { --x: 50%; }
+.button-stake-now:hover { --x: 50%; }
+
+.wider {
+  width: 80%;
+}
 
 
 .button-stake {
@@ -379,6 +383,12 @@ html.lenis {
   align-items: end;
   justify-content: center;
   position: relative;
+}
+
+.one-video {
+  position: relative;
+  width: 80%;
+  border-radius: 35px;
 }
 
 
@@ -919,7 +929,7 @@ transform: scale(1);
 
 .roadmap-container {
   width: 30%;
-  height: 40vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   background-color: #fefeff15;
@@ -956,6 +966,10 @@ ul {
 
 .roadmap-button:hover {
   color: #fefeff50;
+}
+
+.learn-more {
+  cursor: pointer;
 }
 
 
@@ -1555,7 +1569,7 @@ ul {
 
 .button-join-now:hover { --x: 50%; }
 
-.button-buy-now {
+.button-stake-now {
   width: 40%;
   height: auto;
   padding-top: 0.1vw;
@@ -1569,17 +1583,23 @@ ul {
   z-index: 20;
 }
 
-.button-buy-now:hover { --x: 50%; }
+.button-stake-now:hover { --x: 50%; }
 
 .one-content-right {
   width: 100%;
-  height: 40vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   position: relative;
-  margin-top: 0%;
+  margin-top: 3vh;
+}
+
+.one-video {
+  position: relative;
+  width: 100%;
+  border-radius: 35px;
 }
 
 
@@ -2324,7 +2344,7 @@ transform: scale(1);
 
 .roadmap-container {
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   background-color: #fefeff15;

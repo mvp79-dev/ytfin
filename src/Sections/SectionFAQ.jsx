@@ -1,10 +1,17 @@
 import React, { useRef, useState } from "react";
 import Accordion from "../Accordion";
+import { useNavigate } from "react-router-dom";
 
 export const SectionFAQ = () => {
     const handleClick = (linkUrl) => {
         // Open the specified webpage link in a new tab when carousel-content is clicked
         window.open(linkUrl, '_blank');
+      };
+
+      const navigate = useNavigate();
+
+      const handleStakeNowClick = () => {
+        navigate('/stake'); // Navigate to SectionBUYNOW
       };
       
       return (
@@ -66,20 +73,19 @@ export const SectionFAQ = () => {
     
               <div className="seven-row-right" >
                 <div className="seven-socials" >
-                  <h1 className="description white" >Lorem Ipsum</h1>
+                  <h1 className="description white" >Connect With Us</h1>
                   <div className="seven-socials-icons" >
-                    <i className="fa-brands fa-twitter" onClick={() => handleClick('https://twitter.com/home')} ></i>
-                    <i className="fa-brands fa-linkedin" onClick={() => handleClick('https://www.linkedin.com/feed/')} ></i>
-                    <i className="fa-brands fa-instagram" onClick={() => handleClick('https://www.instagram.com/')} ></i>
-                    <i className="fa-brands fa-discord" onClick={() => handleClick('https://discord.com/')} ></i>
+                    <i className="fa-brands fa-twitter" onClick={() => handleClick('https://twitter.com/YTFIN_World')} ></i>
+                    <i class="fa-brands fa-youtube" onClick={() => handleClick('https://www.youtube.com/channel/UCFcsKu6pKAeFqSQE1eKmlHw')} ></i>
+                    <i class="fa-brands fa-telegram" onClick={() => handleClick('https://t.me/ytfin_portal')} ></i>
                   </div>
                 </div>
                 <div className="seven-get-started" >
-                  <h1 className="small-headline ready-to-get-started white" >Lorem Ipsum Dolor Sit</h1>
-                  <h1 className="small-text ready-to-get-started-description white" >Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</h1>
-                  <div className="broneeri-kõne-seven " >
-                    <h1 className="small-description white bold broneeri-kõne-text" >Lorem Ipsum</h1>
-                  </div>
+                  <h1 className="small-headline ready-to-get-started white" >Let's Get Started</h1>
+                  <h1 className="small-text ready-to-get-started-description white" >Transforming YouTube ad revenue into direct earnings for token holders.</h1>
+                  <button className="button-stake-now wider" >
+                    <h1 className="small-description white" onClick={handleStakeNowClick} >Stake Now</h1>
+                  </button>
                 </div>
               </div>
     
