@@ -6,47 +6,47 @@ export const Section1 = () => {
   const roadmapData = [
     {
       quarter: "Q1 2024",
-      title: "Headline 1",
+      title: "YTFIN Project Initiation",
       milestones: [
-        "Launch of BlackCard & BCCoin",
-        "Initiation of BlackCardChain Development",
-        "AI Liquidity Management System"
+        "YTFIN Ecosystem Development",
+        "Smart Contract & Token Development",
+        "Website development"
       ]
     },
     {
       quarter: "Q2 2024",
-      title: "Headline 2",
+      title: "Marketing and Community Engagement",
       milestones: [
-        "Launch of BlackCard & BCCoin",
-        "Initiation of BlackCardChain Development",
-        "AI Liquidity Management System"
+        "Marketing Campaigns",
+        "Promotion Strategies implementation",
+        "Community Engagement"
       ]
     },
     {
       quarter: "Q3 2024",
-      title: "Headline 3",
+      title: "Token Sale and Content Creation",
       milestones: [
-        "Launch of BlackCard & BCCoin",
-        "Initiation of BlackCardChain Development",
-        "AI Liquidity Management System"
+        "Pre-sale on Pinksale.finance",
+        "Token Sale and Exchange Listing",
+        "Fund Allocation for Content Creation"
       ]
     },
     {
       quarter: "Q4 2024",
-      title: "Headline 4",
+      title: "Official Launch",
       milestones: [
-        "Launch of BlackCard & BCCoin",
-        "Initiation of BlackCardChain Development",
-        "AI Liquidity Management System"
+        "YouTube Channel Launch",
+        "Engage the community to participate and promote the content",
+        "Revenue Generation"
       ]
     },
     {
-      quarter: "Q5 2024",
-      title: "Headline 5",
+      quarter: "Q1 2025",
+      title: "Expansion and Scaling",
       milestones: [
-        "Launch of BlackCard & BCCoin",
-        "Initiation of BlackCardChain Development",
-        "AI Liquidity Management System"
+        "Youtube Channel Expansion",
+        "More Content Production",
+        "Partnerships and integrations"
       ]
     },
     // Add more roadmap data for the remaining containers
