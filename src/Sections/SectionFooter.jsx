@@ -23,10 +23,9 @@ export const SectionFooter = () => {
                 </div>
                 <div className="footer-column footer-column-main" >
                     <h1 className="smallest-headline footer-title white" >Quick Links</h1>
-                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/ytfinroadmap.pdf")} >Roadmap</h1>
-                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/litepaper.pdf")} >Litepaper</h1>
-                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/toke.pdf")} >Tokenomics</h1>
-                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/tech.pdf")} >Technical Whitepaper</h1>
+                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/roadmap1.pdf")} >Roadmap</h1>
+                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/tokenomics1.pdf")} >Tokenomics</h1>
+                    <h1 className="small-description footer-text footer-description grey" onClick={() => handleClick("/whitepaper1.pdf")} >Whitepaper</h1>
                 </div>
                 <div className="footer-column footer-column-main" >
                     <h1 className="smallest-headline footer-title white" >Connect With Us</h1>
